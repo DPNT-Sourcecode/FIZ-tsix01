@@ -107,4 +107,12 @@ public class FizzBuzzSolutionTest {
         assertThat(result, is("fizz buzz deluxe"));
     }
 
+    @Test
+    public void shouldReturnFakeDeluxeWhenNumberIsOdd() {
+        FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
+
+        String result = fizzBuzzSolution.fizzBuzz(11);
+
+        assertThat(result, is("fake deluxe"));
+    }
 }

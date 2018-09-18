@@ -15,12 +15,11 @@ public class FizzBuzzSolution {
         }
 
         if (isDeluxe(number)) {
+            if(number % 2 != 0) {
+                result.append("fake ");
+            }
             result.append("deluxe");
         }
-
-//        if (isFizzBuzz(number)) {
-//            return "fizz buzz";
-//        }
 
         if(result.length() == 0) {
             return String.valueOf(number);

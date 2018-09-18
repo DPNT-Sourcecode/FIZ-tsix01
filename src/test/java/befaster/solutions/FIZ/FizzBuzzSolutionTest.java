@@ -75,7 +75,7 @@ public class FizzBuzzSolutionTest {
     public void shouldReturnDeluxeWhenNumberIsGreaterThan10AndAllDigitsIdentitical() {
         FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
 
-        String result = fizzBuzzSolution.fizzBuzz(11);
+        String result = fizzBuzzSolution.fizzBuzz(22);
 
         assertThat(result, is("deluxe"));
     }
@@ -86,7 +86,7 @@ public class FizzBuzzSolutionTest {
 
         String result = fizzBuzzSolution.fizzBuzz(33);
 
-        assertThat(result, is("fizz deluxe"));
+        assertThat(result, is("fizz fake deluxe"));
     }
 
     @Test
@@ -95,7 +95,7 @@ public class FizzBuzzSolutionTest {
 
         String result = fizzBuzzSolution.fizzBuzz(55);
 
-        assertThat(result, is("buzz deluxe"));
+        assertThat(result, is("buzz fake deluxe"));
     }
 
     @Test
@@ -104,7 +104,7 @@ public class FizzBuzzSolutionTest {
 
         String result = fizzBuzzSolution.fizzBuzz(555);
 
-        assertThat(result, is("fizz buzz deluxe"));
+        assertThat(result, is("fizz buzz fake deluxe"));
     }
 
     @Test

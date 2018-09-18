@@ -45,7 +45,7 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void shouldReturnFizzWhenNumberHasThree() {
+    public void shouldReturnFizzDeluxWhenNumberHasThree() {
         FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
 
         String result = fizzBuzzSolution.fizzBuzz(163);
@@ -115,4 +115,23 @@ public class FizzBuzzSolutionTest {
 
         assertThat(result, is("fake deluxe"));
     }
+
+    @Test
+    public void shouldReturnFizzDeluxeWhenDevisibleByThreeAndNumberHasThree() {
+        FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
+
+        String result = fizzBuzzSolution.fizzBuzz(312);
+
+        assertThat(result, is("fizz deluxe"));
+    }
+
+    @Test
+    public void shouldReturnBuzzDeluxeWhenDevisibleByFiveAndNumberHasFive() {
+        FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
+
+        String result = fizzBuzzSolution.fizzBuzz(510);
+
+        assertThat(result, is("buzz deluxe"));
+    }
+
 }

@@ -35,12 +35,8 @@ public class FizzBuzzSolution {
         return (number % 5 == 0 || String.valueOf(number).contains("5"));
     }
 
-    private boolean isFizzBuzz(Integer number) {
-        return ((number % 15 == 0) || ( isFizz(number) && isBuzz(number)));
-    }
-
     private boolean isDeluxe(Integer number) {
-        return ((number > 10 ) && isSameDigit(number));
+        return isFizz(number) || isBuzz(number);
     }
 
     private boolean isSameDigit(Integer number) {

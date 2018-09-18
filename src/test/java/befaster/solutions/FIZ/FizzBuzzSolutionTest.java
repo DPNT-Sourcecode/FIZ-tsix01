@@ -43,4 +43,17 @@ public class FizzBuzzSolutionTest {
 
         assertThat(result, is("fizz buzz"));
     }
+
+// - {"method":"fizz_buzz","params":[13],"id":"FIZ_R2_012"}, expected: "fizz", got: "13"
+//        - {"method":"fizz_buzz","params":[43],"id":"FIZ_R2_013"}, expected: "fizz", got: "43"
+//        - {"method":"fizz_buzz","params":[163],"id":"FIZ_R2_014"}, expected: "fizz", got: "163"
+
+    @Test
+    public void shouldReturnFizzWhenNumberHasThree() {
+        FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
+
+        String result = fizzBuzzSolution.fizzBuzz(13);
+
+        assertThat(result, is("fizz buzz"));
+    }
 }

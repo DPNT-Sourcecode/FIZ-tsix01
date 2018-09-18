@@ -8,7 +8,7 @@ public class FizzBuzzSolution {
             return "fizz buzz";
         }
 
-        if (number % 3 == 0) {
+        if (number % 3 == 0 || String.valueOf(number).contains("3")) {
             return "fizz";
         }
 

@@ -79,4 +79,23 @@ public class FizzBuzzSolutionTest {
 
         assertThat(result, is("deluxe"));
     }
+
+    @Test
+    public void shouldReturnFizzDeluxeWhenNumberIsFizzAndDeluxe() {
+        FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
+
+        String result = fizzBuzzSolution.fizzBuzz(33);
+
+        assertThat(result, is("fizz deluxe"));
+    }
+
+    @Test
+    public void shouldReturnBuzzDeluxeWhenNumberIsBuzzAndDeluxe() {
+        FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
+
+        String result = fizzBuzzSolution.fizzBuzz(555);
+
+        assertThat(result, is("buzz deluxe"));
+    }
+
 }

@@ -4,23 +4,28 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
 
-        if (isDeluxe(number)) {
-            return "deluxe";
-        }
-
-        if (isFizzBuzz(number)) {
-            return "fizz buzz";
-        }
+        StringBuilder result = new StringBuilder();
 
         if (isFizz(number)) {
-            return "fizz";
+            result.append("fizz").append(" ");
         }
 
         if (isBuzz(number)) {
-            return "buzz";
+            result.append("buzz").append(" ");
         }
 
-        return String.valueOf(number);
+        if (isDeluxe(number)) {
+            result.append("deluxe");
+        }
+
+//        if (isFizzBuzz(number)) {
+//            return "fizz buzz";
+//        }
+
+        if(result.length() == 0) {
+            return String.valueOf(number);
+        }
+        return result.toString().trim();
     }
 
     private boolean isFizz(Integer number) {

@@ -21,9 +21,9 @@ public class FizzBuzzSolutionTest {
     public void shouldReturnPassedNumberIfNotMultipleOfThreeOrFive() {
         FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
 
-        String result = fizzBuzzSolution.fizzBuzz(22);
+        String result = fizzBuzzSolution.fizzBuzz(41);
 
-        assertThat(result, is("22"));
+        assertThat(result, is("41"));
     }
 
     @Test
@@ -77,7 +77,6 @@ public class FizzBuzzSolutionTest {
 
         String result = fizzBuzzSolution.fizzBuzz(11);
 
-        System.out.println("nnn- "+ String.valueOf(11).matches("^([0-9])\1*$"));
-        assertThat(result, is("fizz buzz"));
+        assertThat(result, is("deluxe"));
     }
 }

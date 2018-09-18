@@ -4,6 +4,10 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
 
+        if (isDeluxe(number)) {
+            return "deluxe";
+        }
+
         if (isFizzBuzz(number)) {
             return "fizz buzz";
         }
@@ -32,6 +36,21 @@ public class FizzBuzzSolution {
     }
 
     private boolean isDeluxe(Integer number) {
-        return ((number > 10 ) && String.valueOf(number).matches("^([0-9])\1"));
+        return ((number > 10 ) && isSameDigit(number));
     }
+
+    private boolean isSameDigit(Integer number) {
+        String stringRepresentation = String.valueOf(number);
+        char[] chars = stringRepresentation.toCharArray();
+
+        for (char c : chars) {
+            if (chars[0] == c) {
+                continue;
+            }
+            return false;
+        }
+
+        return true;
+    }
+
 }

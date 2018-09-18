@@ -30,4 +30,8 @@ public class FizzBuzzSolution {
     private boolean isFizzBuzz(Integer number) {
         return ((number % 15 == 0) || ( isFizz(number) && isBuzz(number)));
     }
+
+    private boolean isDeluxe(Integer number) {
+        return (number > 10 );
+    }
 }

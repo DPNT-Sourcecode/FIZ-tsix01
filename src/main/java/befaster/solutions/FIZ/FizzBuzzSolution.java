@@ -4,6 +4,10 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
 
+        if (number % 15 == 0) {
+            return "fizz buzz";
+        }
+
         if (number % 3 == 0) {
             return "fizz";
         }
@@ -11,6 +15,7 @@ public class FizzBuzzSolution {
         if (number % 5 == 0) {
             return "buzz";
         }
+
         return String.valueOf(number);
     }
 

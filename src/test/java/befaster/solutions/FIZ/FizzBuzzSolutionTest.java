@@ -41,7 +41,7 @@ public class FizzBuzzSolutionTest {
     public void shouldReturnFizzBuzzIfMultipleOfFiveAndThree() {
         FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
 
-        String result = fizzBuzzSolution.fizzBuzz(15);
+        String result = fizzBuzzSolution.fizzBuzz(60);
 
         assertThat(result, is("fizz buzz"));
     }

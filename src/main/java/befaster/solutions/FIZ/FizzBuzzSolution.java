@@ -12,7 +12,7 @@ public class FizzBuzzSolution {
             return "fizz";
         }
 
-        if (number % 5 == 0) {
+        if (number % 5 == 0 || String.valueOf(number).contains("5")) {
             return "buzz";
         }
 

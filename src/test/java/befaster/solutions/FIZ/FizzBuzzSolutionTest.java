@@ -6,8 +6,6 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 public class FizzBuzzSolutionTest {
-//        - If the number is a multiple of both three and five then you should write "fizz buzz"
-//        - If the number is not a multiple of five or three then write the number, example 1
 
     @Test
     public void shouldReturnFizzIfMultipleOfThree() {

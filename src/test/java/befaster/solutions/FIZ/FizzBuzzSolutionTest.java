@@ -77,6 +77,7 @@ public class FizzBuzzSolutionTest {
 
         String result = fizzBuzzSolution.fizzBuzz(11);
 
+        System.out.println("nnn- "+ String.valueOf(11).matches("^([0-9])\1*$"));
         assertThat(result, is("fizz buzz"));
     }
 }

@@ -32,6 +32,6 @@ public class FizzBuzzSolution {
     }
 
     private boolean isDeluxe(Integer number) {
-        return (number > 10 );
+        return ((number > 10 ) && String.valueOf(number).matches("^([0-9])\1"));
     }
 }

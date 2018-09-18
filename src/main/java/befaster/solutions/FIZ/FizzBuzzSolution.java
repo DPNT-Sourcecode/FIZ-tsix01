@@ -39,19 +39,4 @@ public class FizzBuzzSolution {
         return ((number % 3 == 0 && String.valueOf(number).contains("3")) ||
             (number % 5 == 0 && String.valueOf(number).contains("5")));
     }
-
-    private boolean isSameDigit(Integer number) {
-        String stringRepresentation = String.valueOf(number);
-        char[] chars = stringRepresentation.toCharArray();
-
-        for (char c : chars) {
-            if (chars[0] == c) {
-                continue;
-            }
-            return false;
-        }
-
-        return true;
-    }
-
 }

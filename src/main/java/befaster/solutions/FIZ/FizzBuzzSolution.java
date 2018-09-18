@@ -36,7 +36,8 @@ public class FizzBuzzSolution {
     }
 
     private boolean isDeluxe(Integer number) {
-        return isFizz(number) || isBuzz(number);
+        return ((number % 3 == 0 && String.valueOf(number).contains("3")) ||
+            (number % 5 == 0 && String.valueOf(number).contains("5")));
     }
 
     private boolean isSameDigit(Integer number) {

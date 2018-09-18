@@ -27,15 +27,6 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void shouldReturnBuzzIfMultipleOfFive() {
-        FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
-
-        String result = fizzBuzzSolution.fizzBuzz(10);
-
-        assertThat(result, is("buzz"));
-    }
-
-    @Test
     public void shouldReturnFizzBuzzIfMultipleOfFiveAndThree() {
         FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
 

@@ -54,21 +54,21 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void shouldReturnFizzBuzzWhenNumberHasFizzAndBuzz() {
+    public void shouldReturnFizzBuzzFakeDeluxeWhenNumberHasFizzBuzzAndFakeDeluxe() {
         FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
 
         String result = fizzBuzzSolution.fizzBuzz(153);
 
-        assertThat(result, is("fizz buzz"));
+        assertThat(result, is("fizz buzz fake deluxe"));
     }
 
     @Test
-    public void shouldReturnDeluxeWhenNumberIsGreaterThan10AndAllDigitsIdentitical() {
+    public void shouldReturnBuzzWhenNumberIsDevisibleByFive() {
         FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
 
         String result = fizzBuzzSolution.fizzBuzz(20);
 
-        assertThat(result, is("deluxe"));
+        assertThat(result, is("buzz"));
     }
 
     @Test
@@ -99,12 +99,12 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void shouldReturnFakeDeluxeWhenNumberIsOdd() {
+    public void shouldReturnNumberWhenNotDevisibleByThreeOrFive() {
         FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
 
         String result = fizzBuzzSolution.fizzBuzz(11);
 
-        assertThat(result, is("fake deluxe"));
+        assertThat(result, is("11"));
     }
 
     @Test

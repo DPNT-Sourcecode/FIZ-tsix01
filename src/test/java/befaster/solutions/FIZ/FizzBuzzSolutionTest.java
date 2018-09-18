@@ -6,7 +6,6 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 public class FizzBuzzSolutionTest {
-//        - If the number is a multiple of five then you should write "buzz"
 //        - If the number is a multiple of both three and five then you should write "fizz buzz"
 //        - If the number is not a multiple of five or three then write the number, example 1
 
@@ -21,7 +20,7 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void shouldReturnPassedNumberIfNotMultipleOfThree() {
+    public void shouldReturnPassedNumberIfNotMultipleOfThreeOrFive() {
         FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
 
         String result = fizzBuzzSolution.fizzBuzz(22);
@@ -36,6 +35,14 @@ public class FizzBuzzSolutionTest {
         String result = fizzBuzzSolution.fizzBuzz(25);
 
         assertThat(result, is("buzz"));
+    }
 
+    @Test
+    public void shouldReturnFizzBuzzIfMultipleOfFiveAndThree() {
+        FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
+
+        String result = fizzBuzzSolution.fizzBuzz(15);
+
+        assertThat(result, is("fizz buzz"));
     }
 }

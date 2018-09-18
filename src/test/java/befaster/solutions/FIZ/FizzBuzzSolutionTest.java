@@ -30,7 +30,7 @@ public class FizzBuzzSolutionTest {
     public void shouldReturnBuzzIfMultipleOfFive() {
         FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
 
-        String result = fizzBuzzSolution.fizzBuzz(25);
+        String result = fizzBuzzSolution.fizzBuzz(10);
 
         assertThat(result, is("buzz"));
     }
@@ -75,7 +75,7 @@ public class FizzBuzzSolutionTest {
     public void shouldReturnDeluxeWhenNumberIsGreaterThan10AndAllDigitsIdentitical() {
         FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
 
-        String result = fizzBuzzSolution.fizzBuzz(22);
+        String result = fizzBuzzSolution.fizzBuzz(20);
 
         assertThat(result, is("deluxe"));
     }
@@ -129,7 +129,7 @@ public class FizzBuzzSolutionTest {
     public void shouldReturnBuzzDeluxeWhenDevisibleByFiveAndNumberHasFive() {
         FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
 
-        String result = fizzBuzzSolution.fizzBuzz(510);
+        String result = fizzBuzzSolution.fizzBuzz(520);
 
         assertThat(result, is("buzz deluxe"));
     }

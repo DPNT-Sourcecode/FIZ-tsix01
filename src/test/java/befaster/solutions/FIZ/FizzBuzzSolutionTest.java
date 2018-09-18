@@ -71,4 +71,12 @@ public class FizzBuzzSolutionTest {
         assertThat(result, is("fizz buzz"));
     }
 
+    @Test
+    public void shouldReturnDeluxeWhenNumberIsGreaterThan10AndAllDigitsIdentitical() {
+        FizzBuzzSolution fizzBuzzSolution = new FizzBuzzSolution();
+
+        String result = fizzBuzzSolution.fizzBuzz(11);
+
+        assertThat(result, is("fizz buzz"));
+    }
 }
